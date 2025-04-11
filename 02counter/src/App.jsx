@@ -6,15 +6,26 @@ import './App.css'
 function App() {
   let counter =5
 
-  let [count, setCount]= useState(16);
+  const [count, setCount]= useState(16);
 
   const addValue = () =>{
     // console.log("value added", Math.random());
     console.log("value added", counter);
     counter=counter+1;
     // setCount(count++); // after 2 click it change the value
-    if(count<20)
-      setCount(count+1);
+    if(count<20){
+      // setCount(count+1);
+      // setCount(count+1);
+      // setCount(count+1);
+      // setCount(count+1);
+      //increment only one
+      setCount(prevCount => prevCount+1);
+      setCount(prevCount => prevCount+1);
+      setCount(prevCount => prevCount+1);
+      setCount(prevCount => prevCount+1);
+      //increment in 4 
+    }
+      
     
   }
   const removeCount=()=>{
