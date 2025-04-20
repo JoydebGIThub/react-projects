@@ -8,6 +8,7 @@ import About from './components/About/About'
 import Contact from './components/Contact/Contact'
 import User from './components/User/User'
 import Github, { githubInLoader } from './components/Github/Github'
+import App from './App'
 
 // const router= createBrowserRouter([
 //   {
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
 )
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    {/* <RouterProvider router={router}/> */}
+    <App/>
   </StrictMode>,
 )
