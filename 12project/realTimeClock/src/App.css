@@ -1,0 +1,114 @@
+/* .App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.clock {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.message {
+  background-color: lightyellow;
+  padding: 15px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-weight: bold;
+} */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  transform-origin: bottom center;
+  bottom: 50%;
+  left: 50%;
+  border-radius: 5px;
+}
+
+.hour {
+  width: 6px;
+  height: 50px;
+  background-color: black;
+  margin-left: -3px;
+}
+
+.minute {
+  width: 4px;
+  height: 75px;
+  background-color: black;
+  margin-left: -2px;
+}
+
+.second {
+  width: 2px;
+  height: 90px;
+  background-color: red;
+  margin-left: -1px;
+}
+
+.message {
+  background-color: lightyellow;
+  color: black;
+  padding: 15px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
